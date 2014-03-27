@@ -1,15 +1,15 @@
-# H1 A library to connect arduinoYun to nodeJS via a socket.io protocol
+#  A library to connect arduinoYun to nodeJS via a socket.io protocol #
 
 this library works in combination with a python script that handle the socket.io connection
 
 you will need	an arduino YUN properly configured to connected to the Internet
 	
 	*
-	to configure the YUN for 802.x network like eduroam follow this guide 	http://forum.arduino.cc/index.php?topic=197267.0
+	to configure the YUN for 802.x network like eduroam follow this guide 	[http://forum.arduino.cc/index.php?topic=197267.0](http://forum.arduino.cc/index.php?topic=197267.0)
 	Thanks bitfrosting
 	* 
 
-# H2 how to install the library?
+## how to install the library? ##
 
 1. Connect to the Arduino Yun via ssh
 
