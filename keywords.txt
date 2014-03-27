@@ -1,0 +1,5 @@
+SocketIOYunClient	KEYWORD1
+begin	KEYWORD2
+sendMsg	KEYWORD2
+connect	KEYWORD2
+close	KEYWORD2
