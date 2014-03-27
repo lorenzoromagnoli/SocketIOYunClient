@@ -1,0 +1,11 @@
+# H1 A library to connect arduinoYun to nodeJS via a socket.io protocol
+
+this library works in combination with a python script that handle the socket.io connection
+
+# H2 how to install the library?
+
+1. connect to the Arduino Yun via ssh
+--
+ssh root@myYun.local
+--
+ 
