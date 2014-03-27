@@ -8,8 +8,9 @@
 #define SocketIOYunClient_h
 
 #include "Arduino.h"
-#include "Process.h"
-
+#include <Bridge.h>
+#include <Console.h>
+#include <Process.h>
 
 class SocketIOYunClient{
 public:
@@ -18,12 +19,16 @@ public:
     void sendMsg(String m);
 		void connect();
 		void close();
+		String receiveMsg();
+		
 		
   private:
     void sendCommand(String m);
 		String _address;
 		String _port;
 		Process _p;	
+		bool _stringComplete;
+		String _receivedString;
 		
 };
 #endif

@@ -143,6 +143,12 @@ we can use pip to install the package, it will automatically install all the req
 
 	pip install -U socketIO-client
 
+Spacebrew library for arduino is using a python websocket library as well. Somehow, even if just created a python visrtual environment, the websocket library installed in the main python library at `/usr/lib/python2.7/websocket' conflicts with the one that we need installed in our `/opt/python/lib/python2.7/site-packages`.
+
+My temporary solution is to remove the websocket folder from the root python:
+
+	rm -rf /usr/lib/python2.7/websocket/		
+
 ####Install the python script on the YUN####
 Start by downloading this repository.
 use your favourite ftp software to open a connection with your board

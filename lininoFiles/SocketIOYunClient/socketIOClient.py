@@ -7,8 +7,6 @@ from websocket import create_connection
 from socketIO_client import SocketIO, BaseNamespace
 import json
 
-connected =0
-
 
 #logging.basicConfig(level=logging.DEBUG)
 
@@ -45,13 +43,11 @@ def start():
             t.daemon = True
             t.start()
             print("connected")
-            connected=1;
             command = raw_input('--> ')
-            print("connected")
     
     if commandarray[0] == "send":
         totalArgs=len(commandarray)
-        print("n arguments",totalArgs)
+        #print("n arguments",totalArgs)
         
         message=commandarray[1]
         args=dict()
@@ -59,7 +55,7 @@ def start():
             args[commandarray[i]]= commandarray[i+1]
         
         jsonArgs=json.dumps(args)
-        print(jsonArgs)
+        #print(jsonArgs)
         socketIO.emit(message,args)
         
     
