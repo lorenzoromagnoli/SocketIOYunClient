@@ -1,0 +1,51 @@
+DEBUG:root:server= 54.84.192.169port= 3000
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): 54.84.192.169
+DEBUG:requests.packages.urllib3.connectionpool:"GET /socket.io/1/ HTTP/1.1" 200 None
+DEBUG:socketIO_client:[transports available] websocket htmlfile xhr-polling jsonp-polling
+DEBUG:socketIO_client.transports:[transport selected] websocket
+DEBUG:socketIO_client.transports:[packet received] 1::
+DEBUG:root:connection confirmed by server
+DEBUG:root:connection started
+DEBUG:socketIO_client.transports:[packet received] 5:::{"name":"cmd","args":[{"hello":"world"}]}
+INFO:socketIO_client: [event] cmd({u'hello': u'world'})
+DEBUG:socketIO_client.transports:[packet sent] 5:::{"args": [{"finocchio": "buco"}], "name": "ciao"}
+DEBUG:root:address= ciaovar= finocchiodata= buco 
+DEBUG:socketIO_client.transports:[packet received] 5:::{"name":"msg","args":[{"Ciao":"ARDUINO"}]}
+DEBUG:root:received a new Ciao from the server
+DEBUG:root:response Ciao ARDUINO
+DEBUG:root:Sending to Arduino msgCiaoARDUINO
+DEBUG:root:sending msg to Arduino
+DEBUG:socketIO_client.transports:[packet sent] 5:::{"args": [{"finocchio": "buco"}], "name": "ciao"}
+DEBUG:root:address= ciaovar= finocchiodata= buco 
+DEBUG:socketIO_client.transports:[packet received] 5:::{"name":"msg","args":[{"Ciao":"ARDUINO"}]}
+DEBUG:root:received a new Ciao from the server
+DEBUG:root:response Ciao ARDUINO
+DEBUG:root:Sending to Arduino msgCiaoARDUINO
+DEBUG:root:sending msg to Arduino
+DEBUG:socketIO_client.transports:[packet sent] 5:::{"args": [{"finocchio": "buco"}], "name": "ciao"}
+DEBUG:root:address= ciaovar= finocchiodata= buco 
+DEBUG:socketIO_client.transports:[packet received] 5:::{"name":"msg","args":[{"Ciao":"ARDUINO"}]}
+DEBUG:root:received a new Ciao from the server
+DEBUG:root:response Ciao ARDUINO
+DEBUG:root:Sending to Arduino msgCiaoARDUINO
+DEBUG:root:sending msg to Arduino
+DEBUG:socketIO_client.transports:[packet sent] 5:::{"args": [{"finocchio": "buco"}], "name": "ciao"}
+DEBUG:root:address= ciaovar= finocchiodata= buco 
+DEBUG:socketIO_client.transports:[packet received] 5:::{"name":"msg","args":[{"Ciao":"ARDUINO"}]}
+DEBUG:root:received a new Ciao from the server
+DEBUG:root:response Ciao ARDUINO
+DEBUG:root:Sending to Arduino msgCiaoARDUINO
+DEBUG:root:sending msg to Arduino
+DEBUG:socketIO_client.transports:[packet received] 2::
+DEBUG:socketIO_client: [heartbeat]
+DEBUG:socketIO_client.transports:[packet sent] 5:::{"args": [{"finocchio": "buco"}], "name": "ciao"}
+DEBUG:root:address= ciaovar= finocchiodata= buco 
+DEBUG:socketIO_client.transports:[packet received] 5:::{"name":"msg","args":[{"Ciao":"ARDUINO"}]}
+DEBUG:root:received a new Ciao from the server
+DEBUG:root:response Ciao ARDUINO
+DEBUG:root:Sending to Arduino msgCiaoARDUINO
+DEBUG:root:sending msg to Arduino
+DEBUG:socketIO_client.transports:[packet sent] 2:::
+DEBUG:socketIO_client.transports:[packet received] 2::
+DEBUG:socketIO_client: [heartbeat]
+DEBUG:socketIO_client.transports:[packet sent] 2:::
