@@ -142,6 +142,8 @@ once we have activated our vistual evironment with:
 we can use pip to install the package, it will automatically install all the required dependencies
 
 	pip install -U socketIO-client
+	pip install simplejson
+	
 
 Spacebrew library for arduino is using a python websocket library as well. Somehow, even if just created a python visrtual environment, the websocket library installed in the main python library at `/usr/lib/python2.7/websocket' conflicts with the one that we need installed in our `/opt/python/lib/python2.7/site-packages`.
 
