@@ -2,7 +2,7 @@
 #include <SocketIOYunClient.h>
 
 String address = "54.84.192.169";
-String port = "3000";
+String port = "";
 
 SocketIOYunClient mySocketIO = SocketIOYunClient(address, port); //create a new SocketIOYunClient object
 

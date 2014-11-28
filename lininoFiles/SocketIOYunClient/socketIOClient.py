@@ -181,7 +181,7 @@ class Namespace(BaseNamespace):
 class socketIOYUNClient(object):   
 	
 	 
-	def __init__(self, server="54.84.192.169", port=3000):
+	def __init__(self, server="54.84.192.169", port=""):
 		self.server = server
 		self.port = port
 		self.connected = False
@@ -351,8 +351,12 @@ if __name__ == "__main__":
 
 	SIO = {}
 	console = {}
-	logging.debug("server= "+ sys.argv[1]+"port= "+str(sys.argv[2]))
-	SIO = socketIOYUNClient( server=sys.argv[1], port=int(sys.argv[2]))
+	if len(sys.argv)==3:
+		logging.debug("server= "+ sys.argv[1]+"port= "+str(sys.argv[2]))
+		SIO = socketIOYUNClient( server=sys.argv[1], port=int(sys.argv[2]))
+	else:
+		logging.debug("server= "+ sys.argv[1])
+		SIO = socketIOYUNClient( server=sys.argv[1])
 
 	data = ""
 
